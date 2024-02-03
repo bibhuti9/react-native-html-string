@@ -1,30 +1,51 @@
-import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
+import React, { useState } from 'react';
 import { convertHTML } from 'react-native-html-string';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
-export default function App() {
-  React.useEffect(() => {
-    const html = '<p>demo</p>';
-    console.log(convertHTML(html));
-  }, []);
+const App = () => {
+  const [convertToString, setConvertToString] = useState('');
+  const html = `<h1>Hey this is react  native</h1>`;
+
+  const onPress = async () => {
+    const result = await convertHTML(html);
+    setConvertToString(result);
+  };
 
   return (
     <View style={styles.container}>
-      <Text>demo</Text>
+      <Text style={styles.text}>{html}</Text>
+      <Text style={styles.text}>After HTML to String : {convertToString}</Text>
+
+      <TouchableOpacity style={styles.btn} onPress={onPress}>
+        <Text style={styles.btnText}>Convert to String</Text>
+      </TouchableOpacity>
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  text: {
+    fontSize: 18,
+    marginBottom: 10,
+  },
+  btn: {
+    marginTop: 40,
+    backgroundColor: '#e4aa3f',
+    borderRadius: 30,
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  btnText: {
+    fontSize: 18,
+    color: '#fff',
   },
 });
