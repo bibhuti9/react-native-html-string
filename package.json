@@ -1,7 +1,7 @@
 {
   "name": "react-native-html-string",
   "version": "0.1.0",
-  "description": "how to convert html to string",
+  "description": "Convert your HTML content as input and efficiently converts it into a string representation, providing a convenient and straightforward method for handling HTML data within your applications.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -37,7 +37,15 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "convert html to string in react native",
+    "convert html to string",
+    "react native render html to string",
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "html",
+    "render-html"
   ],
   "repository": {
     "type": "git",
