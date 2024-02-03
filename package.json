@@ -1,6 +1,6 @@
 {
   "name": "react-native-html-string",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert your HTML content as input and efficiently converts it into a string representation, providing a convenient and straightforward method for handling HTML data within your applications.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
