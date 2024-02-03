@@ -18,5 +18,6 @@ const HtmlString = NativeModules.HtmlString
     );
 
 export function convertHTML(html: string) {
-  return HtmlString.convertHTML(html);
+  const result = HtmlString.convertHTML(html, (result: string) => result);
+  return result;
 }
