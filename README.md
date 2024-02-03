@@ -9,6 +9,9 @@ Convert your HTML content as input and efficiently converts it into a string rep
 
 ```sh
 npm install react-native-html-string
+OR
+
+yarn add react-native-html-string
 ```
 
 ## Usage
