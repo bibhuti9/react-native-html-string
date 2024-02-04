@@ -46,7 +46,9 @@
     "react-component",
     "react-native-component",
     "html",
-    "render-html"
+    "render-html",
+    "react-native-html-to-string",
+    "react-native-html-to-text"
   ],
   "repository": {
     "type": "git",
