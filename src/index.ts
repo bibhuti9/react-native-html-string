@@ -5,7 +5,7 @@ import { NativeModules } from 'react-native';
  *
  * @param {string} html - The HTML string to be converted, e.g., '<p>Hello react native</p>'.
  * @returns {Promise<string>} A promise that resolves with the converted HTML string.
- * @throws Will reject the promise if an error occurs during conversion.
+ * @throws Will reject with blank string
  */
 export function convertHTML(html: string): Promise<string> {
   const HtmlString = NativeModules.HtmlString;
